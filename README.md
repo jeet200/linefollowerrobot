@@ -1,4 +1,4 @@
-[<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7295122738141130753?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>](https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7295122738141130753?compact=1)
+https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7295122738141130753?compact=1
 
 
 🚀 Line Following Robot: A Step Towards Smart Automation 🤖
