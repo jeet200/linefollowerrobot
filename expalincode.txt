@@ -1,0 +1,28 @@
+The variables defined for motor speed and rotation in your code serve specific purposes for controlling the behavior of the DC motors in different movement modes. Here's a breakdown:
+
+Motor Speeds (M1_Speed and M2_Speed):
+
+int M1_Speed = 62;
+Represents the speed of Motor 1. The value 62 is used in the analogWrite function to control the PWM (Pulse Width Modulation) signal sent to the motor, affecting its speed. PWM values range from 0 (off) to 255 (full speed).
+
+int M2_Speed = 62;
+Represents the speed of Motor 2, also set to 62. This ensures that both motors run at the same speed during forward or backward movement, enabling straight motion.
+
+The speed value 62 is relatively low, which implies moderate motor performance. You can increase this value for faster movement or decrease it for slower, more controlled motion. Ensure your hardware can handle increased speed values without overheating or losing precision.
+
+Rotation Speeds (LeftRotationSpeed and RightRotationSpeed):
+
+int LeftRotationSpeed = 250;
+Used during a right turn, where the left motor (Motor 1) is set to rotate faster to pivot the robot toward the right. The higher value ensures sharp turns.
+
+int RightRotationSpeed = 250;
+Used during a left turn, where the right motor (Motor 2) rotates faster for a similar pivot effect.
+
+These values are significantly higher than the forward/backward speeds, ensuring quick and responsive turning motions. If the robot overshoots turns or becomes unstable, you can lower these values to fine-tune the turning behavior.
+
+Adjustments and Tips
+Balance Speed for Straight Motion: If the robot veers to one side while moving forward, adjust the individual motor speeds (M1_Speed and M2_Speed) slightly to compensate for differences in motor performance or wheel friction.
+
+Gradual Speed Changes: For smoother starts and stops, consider implementing a speed ramping function instead of setting a fixed value instantly.
+
+Sensor-Based Modulation: You can dynamically adjust M1_Speed and M2_Speed based on sensor readings, allowing for more precise navigation around obstacles.
